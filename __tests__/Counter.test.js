@@ -1,4 +1,4 @@
-import { Counter } from './../src/js/counter.js';
+import { Counter } from '../src/js/counter.js';
 
 describe('Counter', () => {
 
