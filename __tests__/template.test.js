@@ -31,12 +31,12 @@ describe('Counter', () => {
     expect(counter.pennies).toEqual(4);
   });
 
-  test('should return undefined if the input is not a number', () => {
+  test('should return false if the input is not a number', () => {
     const counter = new Counter("string");
     expect(counter.makeChange()).toEqual(false);
   });
 
-  test('should return undefined if the input is less than 0', () => {
+  test('should return false if the input is less than 0', () => {
     const counter = new Counter(-1);
     expect(counter.makeChange()).toEqual(false);
   });
