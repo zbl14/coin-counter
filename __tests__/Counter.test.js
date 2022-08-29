@@ -41,4 +41,14 @@ describe('Counter', () => {
     expect(counter.makeChange()).toEqual(false);
   });
 
+  test('should return amount of quartes and the remain in cents', () => {
+    const counter = new Counter(4.99);
+    expect(counter.makeChangeClosure("Quarters")(counter.money)).toEqual("19 Quarters and 24 cents.");
+  });
+
+  test('should return amount of dimes and the remain in cents', () => {
+    const counter = new Counter(4.99);
+    expect(counter.makeChangeClosure("Dimes")(counter.money)).toEqual("49 Dimes and 9 cents.");
+  });
+
 });
