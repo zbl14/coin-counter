@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: ' ',
+      title: 'Coin Counter',
       template: './src/index.html',
       inject: 'body'
     }),
